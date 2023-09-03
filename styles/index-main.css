@@ -6,6 +6,7 @@
 
 body{
     height: 10000px;
+    overflow-x: hidden;
 }
 
 /*Header--------------------------------------------------------------------------------*/
@@ -47,6 +48,7 @@ figure{
     cursor: pointer;
     text-align: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .li1{
@@ -178,6 +180,7 @@ header img{
     width: 100%;
     margin-left: -5px;
     transform: scale(1.2);
+    overflow-x: hidden;
 }
 
 #phrase-top-video{
@@ -214,4 +217,36 @@ header img{
 
 /*Last News Section--------------------------------------------------------*/
 
- 
+ #last-news{
+    width: 100vw;
+    height: 65vh;
+    background-color: #000;
+    margin-top: -10px;
+    z-index: 0.5;
+    position: absolute;
+    clip-path: polygon(0% 0%, 10% 10%, 100% 10%, 100% 100%, 0% 100%);
+    padding-top: 12vh;
+ }
+
+ #lnTitle{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-left: 5vw;
+ }
+
+ #paper{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+ }
+
+ .highlights{
+    height: 380px;
+    width: 300px;
+    background-color: pink;
+ }
+
+ .mid{
+    margin: 0 10% 0 10%;
+ }
